@@ -26,6 +26,7 @@ object DatabaseModule {
     }
 
     @Provides
+    @Singleton
     fun provideLogDao(database: AppDatabase): LogDao {
         return database.logDao()
     }
